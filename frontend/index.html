@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <style>
+            * {
+                font-family: sans-serif;
+            }
+            body{
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: space-evenly;
+            }
+            .section {
+                padding: 50px;
+                background: lightgray;
+                border-radius: 25px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            button {
+                background: #0075ff;
+                border: none;
+                color: white;
+                border-radius: 4px;
+                padding: 10px;
+                margin: 20px;
+                cursor: pointer;
+            }
+            button:hover {
+                background: blue;
+            }
+
+            .notification {
+                margin: 20px;
+                padding: 20px;
+                background: #f1f7ff;
+                color: #0075ff;
+            }
+
+            input {
+                border: 2px solid #419aff;
+                border-radius: 5px;
+                padding: 5px;
+                margin: 10px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div>
+        <h1>Add User</h1>
+        <div>
+        <div class="section">
+            <span> Name </span><input type="text"><br />
+            <span> Username </span><input type="text">
+        </div>
+        <button onclick="checkUsername()">Add User</button>
+        </div>
+        <div class="notification">
+            Click on Add User button to add a user
+        </div>
+    </div>
+    <div>
+        <h1>Find Usernames</h1>
+        <div>
+        <div class="section">
+            <span> Name </span><input type="text"><br />
+        </div>
+        <button onclick="findUsername()">Find User</button>
+        </div>
+    </div>
+    </body>
+</html>
